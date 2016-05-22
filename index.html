@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Drawing App</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+</head>
+<body class="body">
+	<h1>Drawing App</h1>
+	<!-- This is where users will be doing the drawing -->
+	<canvas class="canvas"></canvas>
+	<!-- This is the palette of colors for the user -->
+	<div class="controls">
+		<!-- The default palette of colors for every user -->
+		<ul class="color-list">
+				<li class="red selected"></li>
+				<li class="blue"></li>
+				<li class="yellow"></li>
+		</ul>
+		<!-- Section where user can make there own color to add to palette -->
+		<div class="newcolor">
+			<!-- Top section where the color ranges and color preview are -->
+			<div class="top">
+				<div class="color-block"></div>
+				<div class="sliders">
+					<label for="red">Red</label>
+					<input id="red" name="red" type="range" min=0 max=255 value=0>
+					<label for="blue">Blue</label>
+					<input id="blue" name="blue" type="range" min=0 max=255 value=0>
+					<label for="yellow">Yellow</label>
+					<input id="yellow" name="yellow" type="range" min=0 max=255 value=0>
+				</div>
+			</div>
+			<!-- The button that will add the users custom color to the original palette -->
+			<button class="addbutton">Add New Color</button>
+		</div>
+	</div>
+	<footer>
+		<p>Coded & Designed by <a href="http://ericandrewluna.com" target="_blank">Eric Luna</a></p>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

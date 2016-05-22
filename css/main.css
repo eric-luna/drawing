@@ -1,0 +1,105 @@
+.body{
+	background-color: gray;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.canvas{
+	margin-top: 25px;
+	background-color: white;
+	width: 600px;
+	height: 400px;
+}
+.controls{
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.color-list{
+	display: flex;
+	flex-grow: 1;
+	flex-direction: row;
+	height: 100px;
+	width: 300px;
+	margin:0;
+	padding: 0;
+	align-items: center;
+	justify-content: space-around;
+}
+.color-list li{
+	list-style: none;
+	border-radius: 100%;
+	margin: 10px;
+	width: 60px;
+	height: 60px;
+}
+.selected{
+	  border: 5px solid white;
+}
+.red{
+	background-color: red;
+}
+.blue{
+	background-color: blue;
+}
+.yellow{
+	background-color: yellow;
+}
+.newcolor{
+	margin-top: 20px;
+	width: 350px;
+	justify-content: center;
+	background-color: purple;
+	display: flex;
+	flex-direction: column;
+}
+.newcolor input{
+	flex-grow: 1;
+	background-color: green;
+	margin: 5px 0;
+}
+.top{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+.color-block{
+	width: 50%;
+	height: 100px;
+	width: 100px;
+	background-color: white;
+}
+.sliders{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-self: flex-end;
+}
+.sliders label{
+	margin-top: 5px;
+}
+.addbutton{
+	height: 50px;
+}
+footer {
+	clear: both;
+	margin: auto;
+	margin-top: 15px;
+	text-align: center;
+	color: white;
+}
+footer a:link{
+	text-decoration: none;
+	color: blue;
+	font-size: 1.3em;
+	font-weight: bolder;
+}
+footer a:visited{
+	color: blue;
+	text-decoration: none;
+	font-weight: bolder;
+}
