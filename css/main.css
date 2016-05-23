@@ -7,22 +7,24 @@
 
 }
 .body{
-	background-color: gray;
+	background-color: #c7d0d5;
+	background-color: #1fda9a;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	font-family: 'grand_hotelregular';
-	
 }
 .header{
 	margin: 0;
 	font-size: 5em;
 	color: white;
+	-webkit-text-stroke: 1px black;
 }
 .canvas{
 	margin-top: 15px;
 	background-color: white;
 	border-radius: 10px;
+	border: 1px solid black;
 	cursor: url(../img/cursor.png),crosshair;
 }
 .controls{
@@ -63,12 +65,13 @@
 .toggle{
 	font-size: 1.5em;
 	border-radius: 5px;
+	background-color: #f2f2f3;
 }
 .newcolor{
 	margin-top: 20px;
 	width: 350px;
 	justify-content: center;
-	background-color: purple;
+	background-color: #ee4b3e ;
 	display: flex;
 	flex-direction: column;
 	border-radius: 10px;
@@ -100,10 +103,14 @@
 .sliders label{
 	margin-top: 5px;
 	font-size: 1.5em;
+	color: white;
+	text-decoration:underline;
 }
 .addbutton{
 	font-size: 2em;
 	height: 50px;
+	background-color: #ec583a;
+	background-color: #e9bc1b;
 	border-radius: 10px;
 	border-top-right-radius: 0px;
 	border-top-left-radius: 0px;
