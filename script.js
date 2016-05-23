@@ -31,6 +31,8 @@
 		var $newcolor=$('<li></li>')
 		$newcolor.css('background-color',$('.color-block').css('background-color'));
 		$('.color-list').append($newcolor);
+		//Select the new color
+  		$newcolor.click();
 	});
 	// Canvas controls and functionality
 	$canvas.mousedown(function(e){
@@ -47,5 +49,7 @@
 		}
 	}).mouseup(function(){
 		mousedown=false;
+	}).mouseleave(function(){
+		$canvas.mouseup();
 	})
 	
