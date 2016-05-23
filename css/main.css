@@ -7,8 +7,7 @@
 .canvas{
 	margin-top: 25px;
 	background-color: white;
-	width: 600px;
-	height: 400px;
+	cursor: url(../img/cursor.png);
 }
 .controls{
 	margin-top: 10px;
@@ -21,8 +20,8 @@
 	display: flex;
 	flex-grow: 1;
 	flex-direction: row;
-	height: 100px;
-	width: 300px;
+	/*height: 100px;
+	width: 300px;*/
 	margin:0;
 	padding: 0;
 	align-items: center;
@@ -41,11 +40,11 @@
 .red{
 	background-color: red;
 }
+.green{
+	background-color: green;
+}
 .blue{
 	background-color: blue;
-}
-.yellow{
-	background-color: yellow;
 }
 .newcolor{
 	margin-top: 20px;

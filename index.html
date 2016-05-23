@@ -8,15 +8,16 @@
 <body class="body">
 	<h1>Drawing App</h1>
 	<!-- This is where users will be doing the drawing -->
-	<canvas class="canvas"></canvas>
+	<canvas class="canvas" width="800" height="600"></canvas>
 	<!-- This is the palette of colors for the user -->
 	<div class="controls">
 		<!-- The default palette of colors for every user -->
 		<ul class="color-list">
 				<li class="red selected"></li>
+				<li class="green"></li>
 				<li class="blue"></li>
-				<li class="yellow"></li>
 		</ul>
+		<button class="toggle">New Color</button>
 		<!-- Section where user can make there own color to add to palette -->
 		<div class="newcolor">
 			<!-- Top section where the color ranges and color preview are -->
@@ -25,10 +26,10 @@
 				<div class="sliders">
 					<label for="red">Red</label>
 					<input id="red" name="red" type="range" min=0 max=255 value=0>
+					<label for="green">Green</label>
+					<input id="green" name="green" type="range" min=0 max=255 value=0>
 					<label for="blue">Blue</label>
 					<input id="blue" name="blue" type="range" min=0 max=255 value=0>
-					<label for="yellow">Yellow</label>
-					<input id="yellow" name="yellow" type="range" min=0 max=255 value=0>
 				</div>
 			</div>
 			<!-- The button that will add the users custom color to the original palette -->
