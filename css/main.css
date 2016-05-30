@@ -7,8 +7,8 @@
 
 }
 .body{
-	background-color: #c7d0d5;
 	background-color: #1fda9a;
+	background-color: #D90429;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -19,6 +19,7 @@
 	font-size: 5em;
 	color: white;
 	-webkit-text-stroke: 1px black;
+	letter-spacing: 7px;
 }
 .canvas{
 	margin-top: 15px;
@@ -28,30 +29,41 @@
 	cursor: url(../img/cursor.png),crosshair;
 }
 .controls{
-	margin-top: 10px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
+h2{
+	margin: 0;
+	font-size: 3em;
+	color: white;
+	-webkit-text-stroke: 1px black;
+	letter-spacing: 7px;
+}
 .color-list{
+	margin: 20px 0;
+	margin-top: 0;
 	display: flex;
 	flex-grow: 1;
 	flex-direction: row;
-	margin:0;
 	padding: 0;
 	align-items: center;
 	justify-content: space-around;
+	background-color: white;
+	border-radius: 50px;
+	border:2px solid black;
 }
 .color-list li{
 	list-style: none;
 	border-radius: 100%;
+	/*border:1px solid black;*/
 	margin: 10px;
 	width: 45px;
 	height: 45px;
 }
 .selected{
-	  border: 10px solid white;
+	  border: 5px solid black;
 }
 .red{
 	background-color: red;
@@ -62,19 +74,32 @@
 .blue{
 	background-color: blue;
 }
-.toggle{
-	font-size: 1.5em;
+/*Button Styles*/
+.clear{
+	margin:20px 0;
+	font-size: 2em;
 	border-radius: 5px;
-	background-color: #f2f2f3;
+	background-color: #02C39A;
+	border:1px solid black;
 }
+.toggle{
+	font-size: 2em;
+	border-radius: 5px;
+	background-color: #02C39A;
+	margin: 20px 0;
+	border:1px solid black;
+}
+/*New Color Controls Section*/
 .newcolor{
 	margin-top: 20px;
+	border:1px solid black;
 	width: 350px;
 	justify-content: center;
-	background-color: #ee4b3e ;
+	background-color: white;
 	display: flex;
 	flex-direction: column;
 	border-radius: 10px;
+	display: none;
 }
 .newcolor input{
 	flex-grow: 1;
@@ -92,6 +117,7 @@
 	height: 100px;
 	width: 100px;
 	background-color: white;
+	border:1px solid black;
 }
 .sliders{
 	width: 50%;
@@ -99,21 +125,23 @@
 	flex-direction: column;
 	justify-content: flex-end;
 	align-self: flex-end;
+	margin: 10px 0;
 }
 .sliders label{
 	margin-top: 5px;
 	font-size: 1.5em;
-	color: white;
+	color: black;
 	text-decoration:underline;
 }
 .addbutton{
 	font-size: 2em;
 	height: 50px;
-	background-color: #ec583a;
-	background-color: #e9bc1b;
+	background-color: #02C39A;
 	border-radius: 10px;
+	border-top: 2px solid black;
 	border-top-right-radius: 0px;
 	border-top-left-radius: 0px;
+	width: 100%;
 }
 footer {
 	clear: both;
@@ -122,6 +150,9 @@ footer {
 	text-align: center;
 	color: white;
 	font-size: 1.5em;
+}
+footer p{
+	margin: 0;
 }
 footer a:link{
 	text-decoration: none;
@@ -133,4 +164,11 @@ footer a:visited{
 	color: blue;
 	text-decoration: none;
 	font-weight: bolder;
+}
+/*Responsive Canvas */
+@media only screen and (max-width: 680px)  {
+	.newcolor{
+	width: 95%;
+}
+	
 }

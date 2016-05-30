@@ -8,16 +8,19 @@
 <body class="body">
 	<h1 class="header">Let's Get Drawing</h1>
 	<!-- This is where users will be doing the drawing -->
-	<canvas class="canvas" width="800" height="600"></canvas>
+	<canvas class="canvas" id="canvas" width="1200" height="600"></canvas>
+	<!-- <canvas class="canvas" id="canvas" width="800" height="600"></canvas> -->
 	<!-- This is the palette of colors for the user -->
 	<div class="controls">
 		<!-- The default palette of colors for every user -->
+		<h2>Color Palette</h2>
 		<ul class="color-list">
 				<li class="red selected"></li>
 				<li class="green"></li>
 				<li class="blue"></li>
 		</ul>
-		<button class="toggle">New Color</button>
+		<button class="toggle">Create A New Color</button>
+		<button class="clear">Clear Canvas</button>
 		<!-- Section where user can make there own color to add to palette -->
 		<div class="newcolor">
 			<!-- Top section where the color ranges and color preview are -->
@@ -33,13 +36,13 @@
 				</div>
 			</div>
 			<!-- The button that will add the users custom color to the original palette -->
-			<button class="addbutton">Add New Color</button>
+			<button class="addbutton">Add New Color to Palette</button>
 		</div>
 	</div>
 	<footer>
 		<p>Coded & Designed by <a href="http://ericandrewluna.com" target="_blank">Eric Luna</a></p>
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
